@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Formulir Pendaftaran Seminar</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div id="page">
+    <div class="intro">
+      <p class="eyebrow">SEMINAR TEKNOLOGI</p>
+      <h1>Formulir Pendaftaran Seminar</h1>
+      <p class="intro-text">Daftarkan dirimu dan pilih sesi yang paling sesuai dengan minatmu. Pastikan informasi yang diberikan sudah benar sebelum mengirim formulir.</p>
+    </div>
+
+    <form action="" method="post" enctype="multipart/form-data">
+      <div class="form-section">
+        <h2>Data Peserta</h2>
+        <p class="section-note">Isi identitas peserta dengan lengkap agar proses registrasi berjalan lancar.</p>
+
+        <div class="field">
+          <label for="namalengkap">Nama lengkap</label>
+          <input type="text" id="namalengkap" name="namalengkap" size="30" />
+        </div>
+
+        <div class="field">
+          <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
+          <input type="text" id="nim" name="nim" size="30" />
+        </div>
+
+        <div class="field">
+          <span class="field-label">Jenis kelamin</span>
+          <div class="choice-row">
+            <span class="choice-item">
+              <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+              <label for="laki">Laki-laki</label>
+            </span>
+            <span class="choice-item">
+              <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+              <label for="perempuan">Perempuan</label>
+            </span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="prodi">Program studi</label>
+          <select id="prodi" name="prodi">
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Industri">Teknik Industri</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Pilihan Seminar</h2>
+        <p class="section-note">Pilih jenis tiket dan topik seminar yang ingin kamu ikuti.</p>
+
+        <div class="field">
+          <span class="field-label">Kategori tiket</span>
+          <div class="choice-row">
+            <span class="choice-item">
+              <input type="radio" id="reguler" name="tiket" value="Reguler" />
+              <label for="reguler">Reguler</label>
+            </span>
+            <span class="choice-item">
+              <input type="radio" id="vip" name="tiket" value="VIP" />
+              <label for="vip">VIP</label>
+            </span>
+          </div>
+          <span class="help-text">Pilih satu kategori tiket sesuai kebutuhanmu.</span>
+        </div>
+
+        <div class="field">
+          <span class="field-label">Topik yang diminati</span>
+          <div class="topic-grid">
+            <span class="topic-item">
+              <input type="checkbox" id="topik1" name="topik" value="Web Development" />
+              <label for="topik1">Web Development</label>
+            </span>
+            <span class="topic-item">
+              <input type="checkbox" id="topik2" name="topik" value="Data Science" />
+              <label for="topik2">Data Science</label>
+            </span>
+            <span class="topic-item">
+              <input type="checkbox" id="topik3" name="topik" value="Artificial Intelligence" />
+              <label for="topik3">Artificial Intelligence</label>
+            </span>
+          </div>
+          <span class="help-text">Kamu dapat memilih lebih dari satu topik.</span>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Informasi Tambahan</h2>
+        <p class="section-note">Ceritakan tujuanmu mengikuti seminar dan lampirkan bukti pembayaran.</p>
+
+        <div class="field">
+          <label for="alasan">Apa yang ingin kamu dapatkan dari seminar ini?</label>
+          <textarea id="alasan" name="alasan" rows="7" cols="30"></textarea>
+          <span class="help-text">Tuliskan alasan, harapan, atau pengetahuan yang ingin kamu pelajari.</span>
+        </div>
+
+        <div class="field">
+          <label for="pembayaran">Unggah bukti pembayaran</label>
+          <input type="file" id="pembayaran" name="pembayaran" size="18" />
+          <span class="help-text">Pilih berkas bukti pembayaran dari perangkatmu.</span>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <input type="submit" name="simpan" value="Kirim Pendaftaran" />
+      </div>
+    </form>
+
+    <div class="footer-note">
+      <p>Periksa kembali data dan pilihanmu sebelum mengirim pendaftaran seminar.</p>
+    </div>
+  </div>
+</body>
+</html>

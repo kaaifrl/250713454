@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Formulir Data Mahasiswa</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div id="page">
+    <div class="intro">
+      <p class="eyebrow">PENDATAAN MAHASISWA</p>
+      <h1>Formulir Data Mahasiswa</h1>
+      <p class="intro-text">Lengkapi informasi di bawah ini untuk mencatat data diri, pendidikan, dan hal yang kamu sukai.</p>
+    </div>
+
+    <form action="" method="post" enctype="multipart/form-data">
+      <div class="form-section">
+        <h2>Informasi Pribadi</h2>
+        <p class="section-note">Gunakan data yang benar dan masih aktif.</p>
+
+        <div class="field">
+          <label for="namamhs">Nama lengkap</label>
+          <input type="text" id="namamhs" name="namamhs" size="30" />
+        </div>
+
+        <div class="field">
+          <span class="field-label">Jenis kelamin</span>
+          <div class="choice-row">
+            <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+            <label for="laki" class="choice-label">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+            <label for="perempuan" class="choice-label">Perempuan</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="prodi">Program studi</label>
+          <select id="prodi" name="prodi">
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Industri">Teknik Industri</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="email">Alamat email aktif</label>
+          <input type="text" id="email" name="email" size="30" />
+        </div>
+
+        <div class="field">
+          <label for="telepon">Nomor telepon</label>
+          <input type="text" id="telepon" name="telepon" size="30" />
+        </div>
+
+        <div class="field">
+          <label for="password">Kata sandi</label>
+          <input type="password" id="password" name="password" size="30" />
+          <span class="help-text">Jangan gunakan kata sandi yang dipakai untuk akun penting lainnya.</span>
+        </div>
+
+        <div class="field">
+          <label for="photo">Foto profil</label>
+          <input type="file" id="photo" name="photo" size="18" accept="image/gif, image/jpeg, image/png" />
+          <span class="help-text">Format yang diterima: GIF, JPG/JPEG, atau PNG.</span>
+        </div>
+
+        <div class="field">
+          <label for="namasmu">Nama sekolah asal</label>
+          <input type="text" id="namasmu" name="namasmu" size="30" />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2>Minat dan Kesukaan</h2>
+        <p class="section-note">Pilih satu atau beberapa pilihan yang sesuai dengan minatmu.</p>
+
+        <div class="field">
+          <span class="field-label">Genre musik yang disukai</span>
+          <div class="choice-row">
+            <input type="checkbox" id="musik1" name="musik" value="Pop" />
+            <label for="musik1" class="choice-label">Pop</label>
+            <input type="checkbox" id="musik2" name="musik" value="Rock" />
+            <label for="musik2" class="choice-label">Rock</label>
+            <input type="checkbox" id="musik3" name="musik" value="Jazz" />
+            <label for="musik3" class="choice-label">Jazz</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="field-label">Jenis film favorit</span>
+          <div class="choice-row">
+            <input type="checkbox" id="film1" name="film" value="Drama" />
+            <label for="film1" class="choice-label">Drama</label>
+            <input type="checkbox" id="film2" name="film" value="Action" />
+            <label for="film2" class="choice-label">Action</label>
+            <input type="checkbox" id="film3" name="film" value="Sci-Fi" />
+            <label for="film3" class="choice-label">Sci-Fi</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="resume">Ceritakan sedikit tentang dirimu</label>
+          <textarea id="resume" name="resume" rows="6" cols="30"></textarea>
+          <span class="help-text">Kamu bisa menuliskan minat, kegiatan, atau hal lain yang ingin dibagikan.</span>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <input type="submit" name="simpan" value="Simpan Data" />
+      </div>
+    </form>
+
+    <div class="footer-note">
+      <p>Pastikan semua informasi yang kamu isi sudah sesuai sebelum menyimpan data.</p>
+    </div>
+  </div>
+</body>
+</html>

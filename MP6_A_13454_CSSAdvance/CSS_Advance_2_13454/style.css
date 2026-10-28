@@ -1,0 +1,284 @@
+/* CSS Advance - Formulir Pendaftaran Seminar, tema navy dan emas */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 38px 16px;
+  background: #f1f4f8;
+  color: #26364b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+#page {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e1e7ef;
+  border-radius: 18px;
+  box-shadow: 0 16px 42px rgba(20, 43, 74, 0.12);
+}
+
+.intro {
+  position: relative;
+  overflow: hidden;
+  padding: 38px 40px 34px;
+  color: #ffffff;
+  background: linear-gradient(125deg, #102b4e 0%, #174b7a 58%, #246b99 100%);
+  border-bottom: 6px solid #e3b84d;
+}
+
+.intro:after {
+  position: absolute;
+  top: -82px;
+  right: -42px;
+  width: 230px;
+  height: 230px;
+  content: "";
+  border: 28px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.eyebrow {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 11px;
+  color: #ffdf8a;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 223, 138, 0.55);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.5px;
+}
+
+.intro-text {
+  position: relative;
+  z-index: 1;
+  max-width: 590px;
+  margin: 14px 0 0;
+  color: #e5eef7;
+  font-size: 14px;
+}
+
+form {
+  padding: 10px 40px 32px;
+}
+
+.form-section {
+  margin-top: 24px;
+  padding: 24px 25px 26px;
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 13px;
+  box-shadow: 0 5px 15px rgba(25, 54, 86, 0.04);
+}
+
+.form-section h2 {
+  margin: 0;
+  padding-left: 13px;
+  color: #173f68;
+  border-left: 4px solid #dfb342;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.section-note {
+  margin: 8px 0 22px;
+  color: #77869a;
+  font-size: 13px;
+}
+
+.field {
+  margin: 0 0 19px;
+}
+
+.field:last-child {
+  margin-bottom: 0;
+}
+
+.field > label,
+.field-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #30455e;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 13px;
+  color: #26364b;
+  background: #fbfcfe;
+  border: 1px solid #ccd7e3;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 11px;
+  color: #52677d;
+  background: #f8fafc;
+  border: 1px dashed #aebfd1;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #2f6f9f;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(47, 111, 159, 0.13);
+}
+
+.choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.choice-item,
+.topic-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 9px 13px;
+  background: #f7f9fc;
+  border: 1px solid #dfe6ee;
+  border-radius: 8px;
+  color: #3c5067;
+  font-size: 13px;
+}
+
+.choice-item input,
+.topic-item input {
+  margin: 0;
+  accent-color: #1d5b89;
+}
+
+.choice-item label,
+.topic-item label {
+  cursor: pointer;
+}
+
+.topic-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.help-text {
+  display: block;
+  margin-top: 7px;
+  color: #8491a1;
+  font-size: 12px;
+}
+
+.form-actions {
+  padding-top: 25px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  min-width: 210px;
+  padding: 13px 25px;
+  color: #ffffff;
+  background: linear-gradient(120deg, #153e66, #246b99);
+  border: 0;
+  border-bottom: 4px solid #d6a633;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(120deg, #1b527f, #2e7eae);
+  box-shadow: 0 8px 18px rgba(21, 62, 102, 0.2);
+  transform: translateY(-1px);
+}
+
+.footer-note {
+  padding: 0 40px 22px;
+  color: #8a97a7;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer-note p {
+  margin: 0;
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    padding: 14px 9px;
+  }
+
+  .intro {
+    padding: 29px 23px 27px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  form {
+    padding: 5px 16px 25px;
+  }
+
+  .form-section {
+    padding: 19px 16px 21px;
+  }
+
+  .form-section h2 {
+    font-size: 18px;
+  }
+
+  .footer-note {
+    padding: 0 18px 20px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+}
