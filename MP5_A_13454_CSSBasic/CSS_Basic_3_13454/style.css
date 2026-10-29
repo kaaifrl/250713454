@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(225, 248, 255);
+    min-height: 100vh;
+    margin:0;
+}
+/* style yang diatur pada body adalah warna latar belakang dan tinggi halaman */
+
+#informasi {
+    box-shadow: 0 0.5px 1px 0 grey;
+    background-color: rgb(201, 228, 236, 0.8);
+    padding: 20px 30px 5px 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(0, 0, 0);
+}
+/* style yang diatur pada #informasi adalah warna latar belakang, bayangan kotak, padding, jenis font, dan warna teks */
+
+#informasi h1 {
+    text-align: center;
+    background: linear-gradient(to right, #00b3e4, #005fd3);
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -20px;
+    padding: 20px 0;
+    color: white;
+}
+/* style yang diatur pada #informasi h1 adalah posisi teks, warna latar belakang, margin, padding, dan warna teks */
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+    margin: 20px auto 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(0, 68, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.3s ease;
+}
+/* style yang diatur pada .link adalah posisi tombol, lebar tombol, margin, padding, border, kelengkungan sudut border, kursor, warna latar belakang, jenis font, dan transisi efek ketika mouse diarahkan ke tombol */
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+/* style yang diatur pada .link a adalah warna teks dan dekorasi teks untuk menghilangkan garis bawah link */
+
+.link:hover {
+    background-color: rgb(33, 12, 89);
+    transform: scale(1.05);
+}
+/* style yang diatur pada .link:hover adalah warna latar belakang ketika mouse diarahkan ke tombol dan efek transformasi untuk memperbesar tombol */
